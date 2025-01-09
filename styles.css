@@ -92,27 +92,6 @@ footer {
     margin-top: 2em;
 }
 
-#downloadPDFButton {
-    position: fixed;
-    bottom: 350px; /* ضبط المسافة الرأسية */
-    right: 20px;   /* ضبط المسافة الأفقية */
-    padding: 10px 15px; /* المساحة الداخلية للزر */
-    background-color: #007bff; /* لون الخلفية */
-    color: white; /* لون النص */
-    border: none; /* إزالة الحدود */
-    cursor: pointer; /* إظهار المؤشر */
-    border-radius: 5px; /* جعل الحواف مستديرة */
-    text-align: center; /* محاذاة النص إلى المنتصف */
-    text-decoration: none; /* إزالة التسطير */
-    font-size: 16px; /* حجم النص */
-    display: block; /* جعل الزر يظهر بشكل كتلة */
-    width: 160px; /* عرض ثابت للزر */
-    text-align: center; /* محاذاة النص إلى المنتصف */
-}
-
-#downloadPDFButton:hover {
-    background-color: #0056b3; /* لون عند التمرير */
-}
 
 #officialSiteButton {
     position: fixed;
