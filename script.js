@@ -155,11 +155,8 @@ document.getElementById('downloadPDFButton').addEventListener('click', () => {
     // تحديد رابط الملف
     const fileUrl = 'mycv.pdf'; // استبدل المسار هنا بالمسار الصحيح للملف داخل موقعك
     
-    // فتح رابط الملف لتحميله
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = 'mycv.pdf'; // اسم الملف عند التحميل
-    link.click();
+    // فتح ملف PDF في نافذة جديدة
+    window.open(fileUrl, '_blank');
 });
 
 
