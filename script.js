@@ -151,27 +151,8 @@ document.getElementById('officialSiteButton').addEventListener('click', () => {
     window.open('https://mohamed-elsaeed-abd-elhafez.site123.me/', '_blank');
 });
 
-document.getElementById('downloadPDFButton').addEventListener('click', () => {
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF();
 
-    // تحديد الجزء الذي يتم تحويله إلى PDF
-    const content = document.body.cloneNode(true); // نسخ محتوى الصفحة
-    content.classList.remove('dark-mode'); // إزالة الوضع المظلم
-    
-    // إخفاء عناصر غير ضرورية (مثل الأزرار)
-    content.querySelectorAll('.btn').forEach(button => button.style.display = 'none');
 
-    // استخدام HTML كـ مصدر لـ PDF
-    pdf.html(content, {
-        callback: function (doc) {
-            doc.save('السيرة-الذاتية.pdf'); // اسم الملف عند التحميل
-        },
-        x: 10,
-        y: 10,
-        html2canvas: { scale: 0.8 }, // ضبط دقة الطباعة
-    });
-});
 
 // Language Switcher
 const languageButton = document.createElement('button');
