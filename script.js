@@ -153,7 +153,7 @@ document.getElementById('officialSiteButton').addEventListener('click', () => {
 
 document.getElementById('downloadPDFButton').addEventListener('click', () => {
     // تحديد رابط الملف
-    const fileUrl = 'path/to/your/mycv.pdf'; // استبدل المسار هنا بالمسار الصحيح للملف داخل موقعك
+    const fileUrl = 'mycv.pdf'; // استبدل المسار هنا بالمسار الصحيح للملف داخل موقعك
     
     // فتح رابط الملف لتحميله
     const link = document.createElement('a');
