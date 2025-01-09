@@ -1,0 +1,234 @@
+/* تنسيق صورة الملف الشخصي */
+.profile-container {
+    display: flex;
+    flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+    align-items: center; /* محاذاة المحتوى في الوسط */
+    justify-content: center; /* محاذاة المحتوى في المركز */
+    text-align: center; /* محاذاة النصوص داخل الـ container */
+}
+
+.profile-img {
+    width: 120px; /* تغيير حجم الصورة */
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* إضافة مسافة بين الصورة والمحتوى */
+    object-fit: cover;
+}
+
+/* تنسيق الهيدر */
+header {
+    display: flex;
+    flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+    justify-content: center;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    padding: 2em 0; /* زيادة المسافة في الأعلى والأسفل */
+}
+
+/* تنسيق المعلومات */
+.header-info {
+    text-align: center; /* محاذاة النص في الوسط */
+    margin-top: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    direction: rtl; /* محاذاة النصوص لليمين */
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right; /* محاذاة النصوص في المحتوى على اليمين */
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #007bff;
+    color: white;
+    margin-top: 2em;
+}
+
+#downloadPDFButton {
+    position: fixed;
+    bottom: 350px; /* ضبط المسافة الرأسية */
+    right: 20px;   /* ضبط المسافة الأفقية */
+    padding: 10px 15px; /* المساحة الداخلية للزر */
+    background-color: #007bff; /* لون الخلفية */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* إظهار المؤشر */
+    border-radius: 5px; /* جعل الحواف مستديرة */
+    text-align: center; /* محاذاة النص إلى المنتصف */
+    text-decoration: none; /* إزالة التسطير */
+    font-size: 16px; /* حجم النص */
+    display: block; /* جعل الزر يظهر بشكل كتلة */
+    width: 160px; /* عرض ثابت للزر */
+    text-align: center; /* محاذاة النص إلى المنتصف */
+}
+
+#downloadPDFButton:hover {
+    background-color: #0056b3; /* لون عند التمرير */
+}
+
+#officialSiteButton {
+    position: fixed;
+    bottom: 320px; /* الموقع بالنسبة لأسفل الصفحة */
+    right: 20px; /* الموقع على يمين الصفحة */
+    padding: 10px 15px;
+    background-color: #007bff; /* لون أزرق مناسب */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* تأثير عند التمرير على الزر */
+#officialSiteButton:hover {
+    background-color: #0056b3; /* لون داكن عند التمرير */
+}
+
+#behanceButton {
+    position: fixed;
+    bottom: 260px; /* الموقع بالنسبة لأسفل الصفحة */
+    right: 20px; /* الموقع على يمين الصفحة */
+    padding: 10px 15px;
+    background-color: #1769ff; /* لون Behance */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* تأثير عند التمرير على الزر */
+#behanceButton:hover {
+    background-color: #165edc; /* لون داكن عند التمرير */
+}
+
+#facebookButton {
+    position: fixed;
+    bottom: 200px; /* موقع الزر بالنسبة لأسفل الصفحة */
+    right: 20px; /* على يمين الصفحة */
+    padding: 10px 15px;
+    background-color: #1877F2; /* لون زر فيسبوك */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* تغيير لون الزر عند التمرير عليه */
+#facebookButton:hover {
+    background-color: #145dbf; /* لون داكن عند التمرير */
+}
+
+#whatsappButton {
+    position: fixed;
+    bottom:140px; /* جعل الزر في الأسفل */
+    right: 20px; /* جعل الزر في الجهة اليمنى */
+    padding: 10px 15px; /* نفس الحجم الذي ذكرته */
+    background-color: #25D366; /* لون زر واتساب */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#whatsappButton:hover {
+    background-color: #128C7E; /* تغيير اللون عند المرور فوق الزر */
+}
+
+/* الوضع المظلم */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0; /* تغيير النص إلى لون فاتح لزيادة التباين */
+}
+
+header.dark-mode {
+    background-color: #222;
+}
+
+main.dark-mode {
+    background-color: #333; /* جعل الخلفية داكنة أكثر في القسم الرئيسي */
+    color: #e0e0e0; /* النص بلون فاتح في المحتوى */
+}
+
+nav.dark-mode ul li a {
+    color: #ddd; /* تغيير لون الروابط إلى لون فاتح */
+}
+
+/* تعديل ألوان الروابط عند المرور عليها */
+nav.dark-mode ul li a:hover {
+    color: #fff; /* تغيير اللون إلى الأبيض عند المرور */
+}
+
+footer.dark-mode {
+    background-color: #222;
+    color: #e0e0e0; /* تغيير لون النص في الفوتر ليكون فاتح */
+}
+
+/* تغيير لون النص في الوضع المظلم لزيادة الوضوح */
+body.dark-mode,
+header.dark-mode,
+main.dark-mode,
+footer.dark-mode {
+    color: #e0e0e0; /* النص باللون الفاتح */
+}
+
+nav.dark-mode ul li a {
+    color: #ddd; /* تغيير لون الروابط إلى لون أخف */
+}
+
+nav.dark-mode ul li a:hover {
+    color: #fff; /* تغيير اللون عند المرور فوق الرابط */
+}
